@@ -1,37 +1,14 @@
 import React, {useState} from 'react'
 import Button from '../components/Button';
 import {FiArrowLeft} from 'react-icons/fi'
-import axios from 'axios'
 
 
-const contact = () => {
+export default function contact  () {
     const [name, setName] = useState('')
     const [lastName, setLastName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
-    const handleSubmit = async (
-        e
-        
-        )=> {
-            e.preventDefault()
-            // console.log(name, email);
-            // const res  =  await fetch('/api/send', {
-            //     method: "POST",
-            //     body: JSON.stringify({
-            //         name: name,
-            //         lastName: lastName,
-            //         email: email,
-            //         message: message,
-            //     }),
-            //     headers: {"Content-type": "application/json; charset=UTF-8"}
-            // })
-            
-
-            // console.log('====================================');
-            // console.log(res);
-            // console.log('====================================');
-            window.alert("Function not Avalible")
-        }
+    
 
         
     
@@ -41,7 +18,11 @@ const contact = () => {
         <Button classes={'self-start justify-self-start w-20 h-16 '} href={'/'}><FiArrowLeft/></Button>
         <h1 className=' text-4xl font-extrabold'>Contact Form</h1>
         <p className=' mt-8 text-center font-bold'> Hi again!, <br /> if you would like to work with me or make a job offer, <br /> just send me a message on this form. <br /> We will workout the details, <b className=' text-violet-600'>code comes first.</b> </p>
-        <form onSubmit={handleSubmit} action="submit" className=' h-1/2 w-1/2  m-12 flex flex-col items-center justify-center'>
+        <form onSubmit={(e)=>{
+                e.preventDefault()
+                window.alert("Function not Avalible")
+
+            }} action="submit" className=' h-1/2 w-1/2  m-12 flex flex-col items-center justify-center'>
             <div className='flex items-center justify-center'>
             <input value={name} onChange={(e)=>{
                 setName(e.target.value)
@@ -49,8 +30,12 @@ const contact = () => {
             <input value={lastName} onChange={(e)=>setLastName(e.target.value)} type="text" placeholder='Last Name' className='  w-2/5 p-4 m-1 bg-transparent border border-violet-600 rounded-md focus:outline-none focus:border-2 text-white  text-center'/>
             </div>
             <input value={email} onChange={(e)=>setEmail(e.target.value)} type="email" placeholder='Email' className=' p-4  w-1/2 m-2 bg-transparent border border-violet-600 rounded-md focus:outline-none focus:border-2 text-white  text-center'/>
-            <textarea type="email" placeholder='Message' className=' resize-none p-4 h-1/3  w-1/2 m-1 bg-transparent border border-violet-600 rounded-md focus:outline-none focus:border-2 text-white  text-center'/>
-            <button value={message} onChange={(e)=>setMessage(e.target.value)}  type='submit' className=' dark:bg-white text-violet-600  text-xl  w-36 h-14 rounded-xl hover border border-violet-600 hover:text-white hover:bg-gradient-to-br hover:from-violet-600 hover:to-violet-400 hover:border-white hover:scale-105   transition-all ease-in delay-100 m-7 font-extrabold'>
+            <textarea value={message} onChange={(e)=>{setMessage(e.target.value)}} type="email" placeholder='Message' className=' resize-none p-4 h-1/3  w-1/2 m-1 bg-transparent border border-violet-600 rounded-md focus:outline-none focus:border-2 text-white  text-center'/>
+            <button  onClick={(e)=>{
+                e.preventDefault()
+                window.alert("Function not Avalible")
+
+            }}  type='submit' className=' dark:bg-white text-violet-600  text-xl  w-36 h-14 rounded-xl hover border border-violet-600 hover:text-white hover:bg-gradient-to-br hover:from-violet-600 hover:to-violet-400 hover:border-white hover:scale-105   transition-all ease-in delay-100 m-7 font-extrabold'>
                 Send
             </button>
 
@@ -62,4 +47,3 @@ const contact = () => {
   )
 }
 
-export default contact
