@@ -14,22 +14,23 @@ const contact = () => {
         
         )=> {
             e.preventDefault()
-            console.log(name, email);
-            const res  =  await fetch('/api/send', {
-                method: "POST",
-                body: JSON.stringify({
-                    name: name,
-                    lastName: lastName,
-                    email: email,
-                    message: message,
-                }),
-                headers: {"Content-type": "application/json; charset=UTF-8"}
-            })
+            // console.log(name, email);
+            // const res  =  await fetch('/api/send', {
+            //     method: "POST",
+            //     body: JSON.stringify({
+            //         name: name,
+            //         lastName: lastName,
+            //         email: email,
+            //         message: message,
+            //     }),
+            //     headers: {"Content-type": "application/json; charset=UTF-8"}
+            // })
             
 
-            console.log('====================================');
-            console.log(res);
-            console.log('====================================');
+            // console.log('====================================');
+            // console.log(res);
+            // console.log('====================================');
+            window.alert("Function not Avalible")
         }
 
         
