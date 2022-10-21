@@ -18,7 +18,9 @@ const Projects = () => {
             </div>
             <div className=' h-2/3 w-full   flex  flex-wrap  justify-center items-center'>
 
-              <Button href={'/'} children={<FiArrowLeft/>} classes={' flex  items-center text-bold w-12 h-12 m-0'} />
+              <Button href={'/'}  classes={' flex  items-center text-bold w-12 h-12 m-0'} >
+              <FiArrowLeft/>
+              </Button>
             {
               projects.map((project, i)=>{
                 return <ProjectCard key={i} project={project}/>
