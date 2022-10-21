@@ -5,9 +5,9 @@ import Button from '../components/Button';
 
 export default function Home() {
   return (
-    <main className=" h-screen w-full flex-col flex items-center justify-center  dark:bg-[#1D1B26]">
+    <main className=" h-screen w-full flex-col flex items-center justify-center  dark:bg-[#1D1B26] absolute">
       <TypingComponent/>
-      <p className=' text-xl m-12 text-center spacing tracking-wide font-bold text-white' >
+      <p className='  text-lg md:text-xl m-12 text-center spacing tracking-wide font-semibold md:font-bold text-white' >
           Hello!, I am a web developer specialized on the backend / data scientist .
           <br />
           I am based on Argentina, and currently working for <a className=' text-violet-600 font-extrabold underline underline-offset-2' href="https://www.mycontrol.dev/">Mycontrol</a>

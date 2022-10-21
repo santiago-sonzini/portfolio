@@ -4,10 +4,10 @@ import { TypeAnimation } from 'react-type-animation';
   return (
     <TypeAnimation
       sequence={[
-        'Santiago \n Sonzini', // Types 'One'
+        'Santiago  Sonzini', // Types 'One'
         1000, // Waits 1s
         'BackEnd Developer', // Deletes 'One' and types 'Two'
-        2000, // Waits 2s
+        1000, // Waits 2s
         'Data Scientist in progress', // Types 'Three' without deleting 'Two'
         1500,
         () => {
@@ -17,8 +17,8 @@ import { TypeAnimation } from 'react-type-animation';
       wrapper="div"
       cursor={true}
       repeat={Infinity}
-      style={{ fontSize: '4.9em', fontWeight: 900 }}
-    />
+      style={{ fontSize: '3em', fontWeight: 900, textAlign: 'center' }}
+     />
   );
 };
 

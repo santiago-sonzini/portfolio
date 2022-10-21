@@ -7,16 +7,10 @@ const ProjectCard = ({project}) => {
     console.log(project);
     console.log('====================================');
   return (
-    <div className=' w-1/3 h-4/5 p-4 bg-white m-5 rounded-md border border-violet-600 flex flex-col hover:translate-y-1.5 transition-all duration-300'>
-        <span className=' border border-violet-600 rounded-md h-2/5   w-full'    >
-        <Image
-            src={project.pic}
-            alt="Picture of the author"
-            width="290px"
-            height="150px"
-            fill={true}
-        />
-        </span>
+    <div className=' sm:w-5/6 md:w-2/3 lg:w-1/3 lg:h-2/3 h-1/3 md:h-2/3 p-4 bg-white m-5 rounded-md border border-violet-600 flex flex-col hover:translate-y-1.5 transition-all duration-300 justify-center'>
+        
+        
+        
         
        <span className='flex items-center'>
         <a  rel="noreferrer" target="_blank" href={project.url} >
