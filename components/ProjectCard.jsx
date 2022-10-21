@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
 import {BiLinkExternal} from 'react-icons/bi'
-import { Link } from 'next/link';
 
 const ProjectCard = ({project}) => {
     console.log('====================================');
@@ -20,7 +19,7 @@ const ProjectCard = ({project}) => {
         </span>
         
        <span className='flex items-center'>
-        <a target="_blank" href={project.url} >
+        <a  rel="noreferrer" target="_blank" href={project.url} >
             <h3 className='  text-center  text-violet-600 font-extrabold text-3xl m-2 hover:underline transition-all duration-500 ' >{project.name} </h3>
         </a>
        {project.url ? <BiLinkExternal className=' text-violet-600 text-center font-extrabold text-2xl hover:underline transition-all duration-500 '/> : null}

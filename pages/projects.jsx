@@ -4,7 +4,7 @@ import ProjectCard from '../components/ProjectCard'
 import { FiArrowLeft, FiArrowRight } from 'react-icons/fi';
 import mypic from '../public/delthy.png'
 
-const projects = () => {
+const Projects = () => {
   const [projects, setProjects] = useState([{url: "https://www.mycontrol.dev/", name: "Delthy",pic: mypic, tech: ['NextJs', "Prisma.io", "Express", "JWT", "TailwindCSS", "MySQL", "TypeScript"]},{url: "https://www.mycontrol.dev/",name: "Delthy",pic: mypic, tech: ['NextJs', "Prisma.io", "Express", "JWT", "TailwindCSS", "MySQL", "TypeScript"]}])
 
   return (
@@ -24,7 +24,9 @@ const projects = () => {
                 return <ProjectCard key={i} project={project}/>
               })
             }
-            <Button href={'/'} children={<FiArrowRight/>} classes={' flex  items-center text-bold w-12 h-12 m-0' } />
+            <Button href={'/'}  classes={' flex  items-center text-bold w-12 h-12 m-0' } >
+            <FiArrowRight/>
+            </Button>
             </div>
         </main>
         
@@ -32,4 +34,4 @@ const projects = () => {
   )
 }
 
-export default projects
+export default Projects

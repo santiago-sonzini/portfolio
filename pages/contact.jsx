@@ -3,7 +3,7 @@ import Button from '../components/Button';
 import {FiArrowLeft} from 'react-icons/fi'
 
 
-export default function contact  () {
+export default function Contact  () {
     const [name, setName] = useState('')
     const [lastName, setLastName] = useState('')
     const [email, setEmail] = useState('')
