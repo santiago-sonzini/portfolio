@@ -3,6 +3,7 @@ import { TypeAnimation } from 'react-type-animation';
   const TypingComponent = () => {
   return (
     <TypeAnimation
+      
       sequence={[
         'Santiago  Sonzini', // Types 'One'
         1000, // Waits 1s

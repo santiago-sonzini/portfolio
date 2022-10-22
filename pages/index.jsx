@@ -1,28 +1,51 @@
 
 import TypingComponent from '../components/TypingComponent'
 import Button from '../components/Button';
+import { useContext } from "react";
+import AppContext from '../context/state';
+import Navbar from '../components/Navbar';
 
 
 export default function Home() {
+
+  const value = useContext(AppContext);
+
+
+  let {languages} = value.state
+  console.log('====================================');
+  console.log(languages);
+  console.log('====================================');
   return (
-    <main className=" h-screen w-full flex-col flex items-center justify-center  dark:bg-[#1D1B26] absolute">
-      <TypingComponent/>
+    <>
+    
+    <div className=' h-screen dark:bg-[#1D1B26] '>
+    <Navbar/>
+    <main className=" h-4/5 w-full flex-col flex items-center justify-center  dark:bg-[#1D1B26] absolute">
+      
+      <TypingComponent />
       <p className='  text-lg md:text-xl m-12 text-center spacing tracking-wide font-semibold md:font-bold text-white' >
-          Hello!, I am a web developer specialized on the backend / data scientist .
+          {languages.home[0]}
           <br />
-          I am based on Argentina, and currently working for <a className=' text-violet-600 font-extrabold underline underline-offset-2' href="https://www.mycontrol.dev/">Mycontrol</a>
+          {languages.home[1].intro}
+
+          <a className=' text-violet-600 font-extrabold underline underline-offset-2' href={languages.home[1].link}>{languages.home[1].value}</a>
           <br />
-          Learning Web3 and crypto technologies 
+          {languages.home[2]}
+
           <br />
-          And studyng Artificial Inteligence and Robotics at <a className=' text-violet-600 font-extrabold underline underline-offset-2' href="https://21.edu.ar/"> Siglo 21 University </a>
+          {languages.home[3].intro}
+
+           <a className=' text-violet-600 font-extrabold underline underline-offset-2' href={languages.home[3].link}> {languages.home[3].value} </a>
           
           
         </p>
       <div className=' h-1/6 w-1/2 flex items-center justify-center font-extrabold'>
         
-        <Button href={'projects'}>Projects</Button>
-        <Button href={'contact'}>Contact</Button>
+        <Button href={'projects'}>{languages.home[4].buttons[0]}</Button>
+        <Button href={'contact'}>{languages.home[4].buttons[1]}</Button>
       </div>
     </main>
+    </div>
+    </>
   )
 }

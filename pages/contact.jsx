@@ -1,6 +1,9 @@
 import React, {useState} from 'react'
 import Button from '../components/Button';
 import {FiArrowLeft} from 'react-icons/fi'
+import Navbar from '../components/Navbar';
+import { useContext } from 'react';
+import AppContext from '../context/state';
 
 
 export default function Contact  () {
@@ -9,20 +12,25 @@ export default function Contact  () {
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
     
+    const value = useContext(AppContext);
 
-        
+
+  let {languages} = value.state
+    
     
 
   return (
-    <main className=" h-screen w-full flex-col flex items-center justify-center  dark:bg-[#1D1B26]">
-        <Button classes={'self-start justify-self-start w-20 h-16 flex'} href={'/'}><FiArrowLeft/></Button>
-        <h1 className=' text-4xl font-extrabold'>Contact Form</h1>
-        <p className=' mt-8 text-center font-bold'> Hi again!, <br /> if you would like to work with me or make a job offer, <br /> just send me a message on this form. <br /> We will workout the details, <b className=' text-violet-600'>code comes first.</b> </p>
+    <div className='h-screen dark:bg-[#1D1B26]'>
+    <Navbar/>
+    <main className=" h-4/5 w-full flex-col flex items-center justify-center  dark:bg-[#1D1B26] mt-8">
+        
+        <h1 className=' m-3 mt-5 text-4xl font-extrabold'>{languages.contact[0] }</h1>
+        <p className=' mt-8 text-center font-bold'> {languages.contact[1][0] } <br /> {languages.contact[1][1] } <br /> {languages.contact[1][2] } <br /> {languages.contact[1][3] } <b className=' text-violet-600'>{languages.contact[1][4] }</b> </p>
         <form onSubmit={(e)=>{
                 e.preventDefault()
                 window.alert("Function not Avalible")
 
-            }} action="submit" className=' h-1/2 md:w-1/2  m-12 flex flex-col items-center justify-center'>
+            }} action="submit" className=' h-2/3 md:w-1/2  m-12 flex flex-col items-center justify-center'>
             <div className=' flex md:flex-row items-center justify-center flex-col w-full'>
             <input value={name} onChange={(e)=>{
                 setName(e.target.value)
@@ -35,8 +43,8 @@ export default function Contact  () {
                 e.preventDefault()
                 window.alert("Function not Avalible")
 
-            }}  type='submit' className=' dark:bg-white text-violet-600  text-xl  w-36 h-14 rounded-xl hover border border-violet-600 hover:text-white hover:bg-gradient-to-br hover:from-violet-600 hover:to-violet-400 hover:border-white hover:scale-105   transition-all ease-in delay-100 m-7 font-extrabold'>
-                Send
+            }}  type='submit' className=' dark:bg-white text-violet-600  text-xl  w-36 lg:h-20 h-32 rounded-xl hover border border-violet-600 hover:text-white hover:bg-gradient-to-br hover:from-violet-600 hover:to-violet-400 hover:border-white hover:scale-105   transition-all ease-in delay-100 m-7 font-extrabold'>
+                {languages.contact[2]}
             </button>
 
         </form>
@@ -44,6 +52,8 @@ export default function Contact  () {
        
         
     </main>
+    </div>
+    
   )
 }
 
