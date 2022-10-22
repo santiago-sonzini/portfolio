@@ -4,7 +4,9 @@ import Button from '../components/Button';
 import { useContext } from "react";
 import AppContext from '../context/state';
 import Navbar from '../components/Navbar';
-
+import {GrProjects} from 'react-icons/gr'
+import { AiOutlineFundProjectionScreen} from 'react-icons/ai'
+import {AiOutlineUser} from 'react-icons/ai'
 
 export default function Home() {
 
@@ -41,8 +43,8 @@ export default function Home() {
         </p>
       <div className=' h-1/6 w-1/2 flex items-center justify-center font-extrabold'>
         
-        <Button href={'projects'}>{languages.home[4].buttons[0]}</Button>
-        <Button href={'contact'}>{languages.home[4].buttons[1]}</Button>
+        <Button classes={' flex items-center group-hover:text-white'} href={'projects'}>{languages.home[4].buttons[0]} <AiOutlineFundProjectionScreen className=' text-violet-600 m-2 group-hover:text-white '/></Button>
+        <Button classes={' flex items-center group-hover:text-white'} href={'contact'}>{languages.home[4].buttons[1]} <AiOutlineUser className=' text-violet-600 m-2  hover:text-white'/></Button>
       </div>
     </main>
     </div>

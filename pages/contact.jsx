@@ -44,7 +44,6 @@ export default function Contact  () {
                 window.alert("Function not Avalible")
 
             }}  type='submit' className='
-            
             dark:bg-white text-violet-600  text-xl  w-36 lg:h-20 h-32 rounded-xl hover border border-violet-600 hover:text-white hover:bg-gradient-to-br hover:from-violet-600 hover:to-violet-400 hover:border-white hover:scale-105   transition-all ease-in delay-100 m-7 font-extrabold flex items-center justify-center p-2'>
                 {languages.contact[2]} <FaTelegramPlane className=' m-1'/>
             </button>
