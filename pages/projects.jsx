@@ -2,11 +2,10 @@ import React, {useState} from 'react'
 import Button from '../components/Button'
 import ProjectCard from '../components/ProjectCard'
 import { FiArrowLeft, FiArrowRight } from 'react-icons/fi';
-import mypic from '../public/delthy.png'
 import Navbar from '../components/Navbar';
 
 const Projects = () => {
-  const [projects, setProjects] = useState([{url: "https://www.mycontrol.dev/", name: "Delthy",pic: mypic, tech: ['NextJs', "Prisma.io", "Express", "JWT", "TailwindCSS", "MySQL", "TypeScript"]},{url: "https://www.mycontrol.dev/",name: "Delthy",pic: mypic, tech: ['NextJs', "Prisma.io", "Express", "JWT", "TailwindCSS", "MySQL", "TypeScript"]}])
+  const [projects, setProjects] = useState([{url: "https://www.mycontrol.dev/", name: "MyControl", tech: ['React',  "CSS ", "JS"], position: 'Full Stack Dev'},{url: null,name: "Delthy", tech: ['NextJs', "Prisma.io", "Express", "JWT", "TailwindCSS", "MySQL", "TypeScript"], position: 'Backend Developer'}])
 
   return (
 

@@ -18,7 +18,7 @@ const ProjectCard = ({project}) => {
         </a>
        {project.url ? <BiLinkExternal className=' text-violet-600 text-center font-extrabold text-2xl hover:underline transition-all duration-500 '/> : null}
        </span>
-        <h4 className=' m-2 text-center  text-violet-600 font-normal text-lg '>({'Senior Backend Engenieer'})</h4>
+        <h4 className=' m-2 text-center  text-violet-600 font-normal text-lg '>({project.position})</h4>
         <div className=' flex flex-wrap items-center justify-center m-1'>
         {
             project.tech.map((item, i)=>{

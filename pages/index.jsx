@@ -7,6 +7,7 @@ import Navbar from '../components/Navbar';
 import {GrProjects} from 'react-icons/gr'
 import { AiOutlineFundProjectionScreen} from 'react-icons/ai'
 import {AiOutlineUser} from 'react-icons/ai'
+import Head from 'next/head'
 
 export default function Home() {
 
@@ -21,6 +22,10 @@ export default function Home() {
     <>
     
     <div className=' h-screen dark:bg-[#1D1B26] '>
+    <Head>
+        <title>sonzini-santiago</title>
+        <meta property="og:title" content="sonzini-santiago" key="title" />
+      </Head>
     <Navbar/>
     <main className=" h-4/5 w-full flex-col flex items-center justify-center  dark:bg-[#1D1B26] absolute">
       
@@ -43,8 +48,14 @@ export default function Home() {
         </p>
       <div className=' h-1/6 w-1/2 flex items-center justify-center font-extrabold'>
         
-        <Button classes={' flex items-center group-hover:text-white'} href={'projects'}>{languages.home[4].buttons[0]} <AiOutlineFundProjectionScreen className=' text-violet-600 m-2 group-hover:text-white '/></Button>
-        <Button classes={' flex items-center group-hover:text-white'} href={'contact'}>{languages.home[4].buttons[1]} <AiOutlineUser className=' text-violet-600 m-2  hover:text-white'/></Button>
+        <Button classes={' flex items-center group-hover:text-white'} href={'projects'}>
+          {languages.home[4].buttons[0]} 
+          <AiOutlineFundProjectionScreen className=' text-violet-600 m-2 hover:text-white '/>
+        </Button>
+        <Button classes={' flex items-center group-hover:text-white'} href={'contact'}>
+          {languages.home[4].buttons[1]} 
+          <AiOutlineUser className=' text-violet-600 m-2  hover:text-white'/>
+        </Button>
       </div>
     </main>
     </div>
