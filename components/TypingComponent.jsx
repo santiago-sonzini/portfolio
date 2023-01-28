@@ -18,7 +18,7 @@ import { TypeAnimation } from 'react-type-animation';
       wrapper="div"
       cursor={true}
       repeat={Infinity}
-      style={{ fontSize: '3em', fontWeight: 900, textAlign: 'center' }}
+      style={{ fontSize: '3em', fontWeight: 900, textAlign: 'center', color: 'white' }}
      />
   );
 };

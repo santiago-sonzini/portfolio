@@ -7,7 +7,6 @@ import Navbar from '../components/Navbar';
 import {GrProjects} from 'react-icons/gr'
 import { AiOutlineFundProjectionScreen} from 'react-icons/ai'
 import {AiOutlineUser} from 'react-icons/ai'
-import Head from 'next/head'
 
 export default function Home() {
 
@@ -21,13 +20,10 @@ export default function Home() {
   return (
     <>
     
-    <div className=' h-screen dark:bg-[#1D1B26] '>
-    <Head>
-        <title>sonzini-santiago</title>
-        <meta property="og:title" content="sonzini-santiago" key="title" />
-      </Head>
+    <div className=' h-screen bg-[#1D1B26] '>
+   
     <Navbar/>
-    <main className=" h-4/5 w-full flex-col flex items-center justify-center  dark:bg-[#1D1B26] absolute">
+    <main className=" h-4/5 w-full flex-col flex items-center justify-center  bg-[#1D1B26] absolute">
       
       <TypingComponent />
       <p className='  text-lg md:text-xl m-12 text-center spacing tracking-wide font-semibold md:font-bold text-white' >

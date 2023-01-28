@@ -20,9 +20,9 @@ export default function Contact  () {
     
 
   return (
-    <div className='h-screen dark:bg-[#1D1B26]'>
+    <div className='h-screen bg-[#1D1B26]'>
     <Navbar/>
-    <main className=" h-4/5 w-full flex-col flex items-center justify-center  dark:bg-[#1D1B26] mt-8">
+    <main className=" h-4/5 w-full flex-col flex items-center justify-center bg-[#1D1B26] mt-8">
         
         <h1 className=' m-3 mt-5 text-4xl font-extrabold'>{languages.contact[0] }</h1>
         <p className=' mt-8 text-center font-bold'> {languages.contact[1][0] } <br /> {languages.contact[1][1] } <br /> {languages.contact[1][2] } <br /> {languages.contact[1][3] } <b className=' text-violet-600'>{languages.contact[1][4] }</b> </p>
