@@ -1,11 +1,10 @@
 import React, {useState} from 'react'
-import Button from '../components/Button'
-import ProjectCard from '../components/ProjectCard'
-import { FiArrowLeft, FiArrowRight } from 'react-icons/fi';
+
 import Navbar from '../components/Navbar';
+import PaginatedItems from '../components/Pagination';
 
 const Projects = () => {
-  const [projects, setProjects] = useState([{url: "https://www.mycontrol.dev/", name: "MyControl", tech: ['React',  "CSS ", "JS"], position: 'Full Stack Dev'},{url: null,name: "Delthy", tech: ['NextJs', "Prisma.io", "Express", "JWT", "TailwindCSS", "MySQL", "TypeScript"], position: 'Backend Developer'}])
+  const [projects, setProjects] = useState([{url: "https://www.mycontrol.dev/", name: "MyControl", tech: ['React',  "CSS ", "JS"], position: 'FullStack Developer'},{url: "https://summarize-kappa.vercel.app/",name: "Summarize", tech: ['NextJs', "Prisma.io", "OpenAI", "NextAuth", "TailwindCSS", "PostgreSQL", "TypeScript"], position: 'FullStack Developer'},{url: null,name: "Delthy", tech: ['NextJs', "Prisma.io", "Express", "JWT", "TailwindCSS", "MySQL", "TypeScript"], position: 'Backend Developer'}])
 
   return (
 
@@ -15,22 +14,10 @@ const Projects = () => {
         
 
         <main className=' w-full h-screen md:w-2/3  bg-[#1D1B26]'>
-            <div className=' flex items-center '>
-              <h1 className='text-white text-5xl md:text-5xl  font-extrabold underline underline-offset-4 m-3'>Projects:</h1>
-            </div>
-            <div className=' md:h-2/3 h-5/6  w-full   flex  flex-wrap  justify-center items-center bg-[#1D1B26] ' >
+            
+            <div className=' md:h-5/6 h-5/6  w-full   flex  flex-wrap  justify-center items-center bg-[#1D1B26] ' >
 
-              <Button href={'/'}  classes={' lg:flex  items-center text-bold w-12 h-12 m-0  hidden '} >
-              <FiArrowLeft className=''/>
-              </Button>
-            {
-              projects.map((project, i)=>{
-                return <ProjectCard key={i} project={project}/>
-              })
-            }
-            <Button href={'/'}  classes={'hidden lg:flex   items-center text-bold w-12 h-12 m-0' } >
-            <FiArrowRight/>
-            </Button>
+            <PaginatedItems items={projects} itemsPerPage={2}/>
             </div>
         </main>
         

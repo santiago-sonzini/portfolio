@@ -24,13 +24,13 @@ export default function Contact  () {
     <Navbar/>
     <main className=" h-4/5 w-full flex-col flex items-center justify-center bg-[#1D1B26] mt-8">
         
-        <h1 className=' m-3 mt-5 text-4xl font-extrabold'>{languages.contact[0] }</h1>
-        <p className=' mt-8 text-center font-bold'> {languages.contact[1][0] } <br /> {languages.contact[1][1] } <br /> {languages.contact[1][2] } <br /> {languages.contact[1][3] } <b className=' text-violet-600'>{languages.contact[1][4] }</b> </p>
+        <h1 className=' text-white m-3 mt-5 text-4xl font-extrabold'>{languages.contact[0] }</h1>
+        <p className=' text-white mt-8 text-center font-bold'> {languages.contact[1][0] } <br /> {languages.contact[1][1] } <br /> {languages.contact[1][2] } <br /> {languages.contact[1][3] } <b className=' text-violet-600'>{languages.contact[1][4] }</b> </p>
         <form onSubmit={(e)=>{
                 e.preventDefault()
                 window.alert("Function not Avalible")
 
-            }} action="submit" className=' h-2/3 md:w-1/2  m-12 flex flex-col items-center justify-center'>
+            }} action="submit" className=' h-2/3 w-full md:w-1/2  m-12 flex flex-col items-center justify-center'>
             <div className=' flex md:flex-row items-center justify-center flex-col w-full'>
             <input value={name} onChange={(e)=>{
                 setName(e.target.value)
