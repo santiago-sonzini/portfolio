@@ -1,10 +1,10 @@
  const lenguajeObject = {
     es: {
-        home: ["Hola!, Soy desarrollador web especializado en el backend / ciencia de datos .", {intro:"Actualmente vivo en Argentina y trabajo en ", link: "https://www.mycontrol.dev/", value:"Mycontrol"}, 'Aprendiendo desarrollo de Web3 y cryptomonedas', {intro: "Y estudiando Inteligencia Artificial y Robotica en ", link: "https://21.edu.ar/", value: " Universidad Siglo 21"}, {buttons: ['Proyectos', "Contacto"], animation: ['Santiago  Sonzini', 'Desarrollador Backend', "Cientifico de Datos en progreso"]}],
+        home: ["Hola!, Soy desarrollador web especializado en el backend / ciencia de datos .", {intro:"Actualmente vivo en Argentina" }, 'Aprendiendo desarrollo de Web3 y cryptomonedas', {intro: "Y estudiando Inteligencia Artificial y Robotica en ", link: "https://21.edu.ar/", value: " Universidad Siglo 21"}, {buttons: ['Proyectos', "Contacto"], animation: ['Santiago  Sonzini', 'Desarrollador Backend', "Cientifico de Datos en progreso"]}],
         contact: ['Formulario de contacto',['Hola de nuevo!,', 'si te gustaria trabajar conmigo,', 'enviame un mensaje en este formulario.', '', ' Me asegurare de responder rapidamente.'], 'Enviar']
     },
     en: {
-        home: ["Hello!, I am a web developer specialized on the backend / data scientist .", {intro:"I am based on Argentina, and currently working for ", link: "https://www.mycontrol.dev/", value:"Mycontrol"}, 'Learning Web3 and crypto technologies', {intro: "And studyng Artificial Inteligence and Robotics at", link: "https://21.edu.ar/", value: "Siglo 21 University"}, {buttons: ['Projects', "Contact"]}],
+        home: ["Hello!, I am a web developer specialized on the backend / data scientist .", {intro:"I am based on Argentina"}, 'Learning Web3 and crypto technologies', {intro: "And studyng Artificial Inteligence and Robotics at", link: "https://21.edu.ar/", value: "Siglo 21 University"}, {buttons: ['Projects', "Contact"]}],
         contact: ['Contact Form', ['Hi again!,', 'if you would like to work with me or make a job offer,', 'just send me a message on this form.', ' We will workout the details,', 'code comes first.'], 'Send']
 
     }

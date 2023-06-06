@@ -31,7 +31,6 @@ export default function Home() {
           <br />
           {languages.home[1].intro}
 
-          <a className=' text-violet-600 font-extrabold underline underline-offset-2' href={languages.home[1].link}>{languages.home[1].value}</a>
           <br />
           {languages.home[2]}
 
