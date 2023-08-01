@@ -32,10 +32,7 @@ export default function Home() {
           {languages.home[1].intro}
 
           <br />
-          {languages.home[2]}
-
-          <br />
-          {languages.home[3].intro}
+          {languages.home[2].intro}
 
            <a className=' text-violet-600 font-extrabold underline underline-offset-2' href={languages.home[3].link}> {languages.home[3].value} </a>
           
@@ -44,13 +41,13 @@ export default function Home() {
       <div className=' h-1/6 w-1/2 flex items-center justify-center font-extrabold'>
         
         <Button classes={' flex items-center group-hover:text-white'} href={'projects'}>
-          {languages.home[4].buttons[0]} 
+          {languages.home[3].buttons[0]} 
           <AiOutlineFundProjectionScreen className=' text-violet-600 m-2 hover:text-white '/>
         </Button>
-        <Button classes={' flex items-center group-hover:text-white'} href={'contact'}>
-          {languages.home[4].buttons[1]} 
+        {/* <Button classes={' flex items-center group-hover:text-white'} href={'contact'}>
+          {languages.home[3].buttons[1]} 
           <AiOutlineUser className=' text-violet-600 m-2  hover:text-white'/>
-        </Button>
+        </Button> */}
       </div>
     </main>
     </div>
