@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 import PaginatedItems from '../components/Pagination';
 
 const Projects = () => {
-  const [projects, setProjects] = useState([{url:null, name: "MyControl", tech: ['React',  "CSS ", "JS"], position: 'FullStack Developer'},{url: null,name: "Summarize", tech: ['NextJs', "Prisma.io", "OpenAI", "NextAuth", "TailwindCSS", "PostgreSQL", "TypeScript"], position: 'FullStack Developer'},{url: null,name: "Delthy", tech: ['NextJs', "Prisma.io", "Express", "JWT", "TailwindCSS", "MySQL", "TypeScript"], position: 'Backend Developer'}])
+  const [projects, setProjects] = useState([{url:'https://c13-42-ft-node-react.vercel.app/', name: "NoCountry c-13", tech: ['NextJs', "Prisma.io", "NextAuth", "TailwindCSS", "PostgreSQL", "TypeScript"], position: 'FullStack Developer'},{url:null, name: "MyControl", tech: ['React',  "CSS ", "JS"], position: 'FullStack Developer'},{url: null,name: "Summarize", tech: ['NextJs', "Prisma.io", "OpenAI", "NextAuth", "TailwindCSS", "PostgreSQL", "TypeScript"], position: 'FullStack Developer'},{url: null,name: "Delthy", tech: ['NextJs', "Prisma.io", "Express", "JWT", "TailwindCSS", "MySQL", "TypeScript"], position: 'Backend Developer'}])
 
   return (
 

@@ -17,7 +17,8 @@ export default function Contact  () {
 
   let {languages} = value.state
     
-    
+
+  
 
   return (
     <div className='h-screen bg-[#1D1B26]'>
