@@ -34,7 +34,7 @@ export default function Home() {
           <br />
           {languages.home[2].intro}
 
-           <a className=' text-violet-600 font-extrabold underline underline-offset-2' href={languages.home[3].link}> {languages.home[3].value} </a>
+           <a className=' text-violet-600 font-extrabold underline underline-offset-2' href={languages.home[2].link}> {languages.home[2].value} </a>
           
           
         </p>
