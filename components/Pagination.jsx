@@ -18,7 +18,7 @@ function Items({ currentItems }) {
     <div className="items w-full md:w-full h-full flex flex-col md:flex-row items-center justify-evenly">
     {currentItems && currentItems.map((item) =>  (
       
-      <div className=' m-2 h-2/3  w-5/6 md:w-2/3 lg:w-1/3 lg:h-5/6  md:h-2/3 p-8 bg-gradient-to-br from-violet-600 via-violet-600 to-indigo-600 m-5 rounded-md border border-violet-600 flex flex-col hover:translate-y-1.5 transition-all duration-300 justify-center'>
+      <div className=' m-2 h-2/3  w-5/6 md:w-2/3 lg:w-1/3   md:h-1/2 p-8 bg-gradient-to-br from-violet-600 via-violet-600 to-indigo-600 m-5 rounded-md border border-violet-600 flex flex-col hover:translate-y-1.5 transition-all duration-300 justify-center'>
         
         
         
