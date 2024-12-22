@@ -27,19 +27,13 @@ export default function Home() {
       <p className='  text-lg md:text-xl m-12 text-center spacing tracking-wide font-semibold md:font-bold text-white' >
           {languages.home[0]}
           <br />
-          {languages.home[1].intro}
-
-          <br />
-          {languages.home[2].intro}
-
-           <a className=' text-violet-600 font-extrabold underline underline-offset-2' href={languages.home[2].link}> {languages.home[2].value} </a>
-          
+          {languages.home[1].intro}          
           
         </p>
       <div className=' h-1/6 w-1/2 flex items-center justify-center font-extrabold'>
         
         <Button classes={' flex items-center group-hover:text-white'} href={'projects'}>
-          {languages.home[3].buttons[0]} 
+          {languages.home[2].buttons[0]} 
           <AiOutlineFundProjectionScreen className=' text-violet-600 m-2 hover:text-white '/>
         </Button>
         {/* <Button classes={' flex items-center group-hover:text-white'} href={'contact'}>
