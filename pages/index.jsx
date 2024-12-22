@@ -14,9 +14,7 @@ export default function Home() {
 
 
   let {languages} = value.state
-  console.log('====================================');
-  console.log(languages);
-  console.log('====================================');
+  
   return (
     <>
     
